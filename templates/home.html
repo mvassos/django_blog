@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+{% load static %}
 
 <style>
     body {
@@ -22,18 +23,19 @@
     <div class="container">
         <div class="row">
             <div class=" col-md-8 col-md-10 mx-auto">
-                <div class="site-heading">
-                    <h3 class=" site-heading my-4 mt-3 text-white"> Home </h3> <! use a p tag class= "text-light" This is a blog written in Django! &nbsp < /p
+                <div class="page-header">
+                    <h3 class=" page-header my-4 mt-3 text-center text-white"> Home </h3>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
+<body>
+    <h3 class=" page-header my-4 mt-3 text-center text-blue"> This my doge </h3>
+    <a href="https://www.linkedin.com/in/manuel-vassos-685303180/"><img src="{% static '90138.jpeg' %}" class="img-responsive rounded mx-auto d-block"></a>
 
-
-
-
+</body>
 
 
 {% endblock %}

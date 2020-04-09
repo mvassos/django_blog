@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
     <head>
@@ -7,7 +8,9 @@
         <meta name="google" content="notranslate" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+
             crossorigin="anonymous" />
+         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
 
     <body>
@@ -35,32 +38,75 @@
     </style>
 
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{% url 'home' %}">Manuel Vassos</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item text-black">
-                            <a class="nav-link text-black font-weight-bold" href="{% url 'home' %}">Home</a>
+                            <a class="nav-link text-black font-weight-bold text-right" href="{% url 'home' %}">Home</a>
                         </li>
                         <li class="nav-item text-black">
-                            <a class="nav-link text-black font-weight-bold" href="{% url 'blog' %}">Blog</a>
+                            <a class="nav-link text-black font-weight-bold text-right" href="{% url 'blog' %}">Blog</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
+
         <!-- Footer -->
-        <footer class="py-3 bg-grey">
-            <p class="m-0 text-dark text-center ">This is a footer</p>
+        <footer class="page-footer font-small cyan darken-3">
+            <!-- Footer Elements -->
+              <div class="container">
+
+                <!-- Grid row-->
+                <div class="row">
+
+                  <!-- Grid column -->
+                  <div class="col-md-12 py-5">
+                    <div class="mb-5 flex-center">
+
+                      <!-- Github -->
+                        <a href="https://github.com/mvassos">
+                        <i class="fa fa-github-square mr-md-5 mr-3 fa-2x"></i></a>
+                      <!-- Twitter -->
+                      <a href="https://twitter.com/vassos_manny">
+                        <i class="fa fa-twitter mr-md-5 mr-3 fa-2x"> </i>
+                      </a>
+                      <!--Linkedin -->
+                      <a href="https://www.linkedin.com/in/manuel-vassos-685303180/">
+                        <i class="fa fa-linkedin mr-md-5 mr-3 fa-2x"> </i>
+                      </a>
+
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+              </div>
+              <!-- Footer Elements -->
+
+             <!-- Copyright -->
+              <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="#"> ManuelVassos.US</a>
+              </div>
+            <!-- Copyright -->
         </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
 
