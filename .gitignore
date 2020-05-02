@@ -36,8 +36,9 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+*.xml
 
 # Enviroments #
 ###############
-.env.dev
+personal_blog/.env.dev
 .env
