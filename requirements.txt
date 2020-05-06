@@ -1,3 +1,5 @@
 Django>=3.0.5,<3.1.0
 django-fontawesome-5
+django-environ
+environ
 gunicorn==19.9.0

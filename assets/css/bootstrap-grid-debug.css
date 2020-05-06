@@ -1,0 +1,3 @@
+/* wrap the portion of HTML with a span-x div to change its color */
+[class*="span"] { background: #EEF; }
+[class*="span"] [class*="span"] { background: #FEE; }
